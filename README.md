@@ -1,5 +1,3 @@
 # ASG1
 
-<p>
-hello!!
-</p>
+- HELLO WHAT IS UP
