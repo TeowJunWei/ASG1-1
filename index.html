@@ -1,44 +1,69 @@
-<!DOCTYPE html>
-<html>
-
-<body>
-  <title>Jun Wei's Shop</title>
+<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <div class="box1">
+  <title>Jun Wei's Shop</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
 
+<header>
+  <div class="nav-bar">
+    <a href="#" class="logo">JUN WEI'S</a>
+    <div class="navigation">
+      <div class="nav-items">
+        <i class="uil uil-times nav-close-btn"></i>
 
-    <ul>
-      <li><a href="">Profile</a></li>
-      <li><a href="">WishList</a></li>
-      <li><a href="">Cart</a></li>
-    </ul>
-    <h6>JW'S SHOP</h6>
-
-  </div>
-
-  <div class="subbox">
-    <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </label>
-    <ol>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact Us</a></li>
-      <li><a href="">Home</a></li>
-      <li><a href="">Shop</a></li>
-
-      <div class="icon">
-        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <a href="#"><i class="uil uil-heart"></i>Wishlist</a>
+        <a href="#"><i class="uil uil-user"></i>User</a>
+        <a href="#"><i class="uil uil-shopping-cart"></i>Shop</a>
+        <a href="login.html"><i class="uil uil-signin"></i>Login</a>
       </div>
-    </ol>
+    </div>
+    <i class="uil uil-apps nav-menu-btn"></i>
+  </div>
+  <div class="scroll-indicator-container">
+    <div class="scroll-indicator-bar">
+
+    </div>
+
   </div>
 
+</header>
+
+<section class="home">
+  <video class="video-slide active" src="2.mp4" autoplay="" muted="" loop=""></video>
+  <video class="video-slide" src="" autoplay="" muted="" loop=""></video>
+  <video class="video-slide" src="" autoplay="" muted="" loop=""></video>
+  <video class="video-slide" src="" autoplay="" muted="" loop=""></video>
+  <video class="video-slide" src="" autoplay="" muted="" loop=""></video>
+  <div class="content active">
+    <h1>JW<br><span>SHOP</span></h1>
+    <p>At JW'S Shop we are here to bring you the best clothes.
+      <br> We make affordable and good quality clothings for everyone.
+      <br>So that you enjoy the priviledge of having the best shirt in the market.
+    </p>
 
 
+  </div>
+</section>
+<script>
 
+
+  const menuBtn = document.querySelector(".nav-menu-btn");
+  const closeBtn = document.querySelector(".nav-close-btn");
+  const navigation = document.querySelector(".navigation");
+
+  menuBtn.addEventListener("click", () => {
+    navigation.classList.add("active");
+
+    closeBtn.addEventListener("click", () => {
+      navigation.classList.remove("active");
+    }
+    )
+  })
+
+</script>
 </body>
 
 </html>
